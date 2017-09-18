@@ -1,0 +1,62 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+-moz-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100;
+box-sizing: border-box;
+font-family: "Encode Sans Condensed", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: url("../images/flowers.jpg") no-repeat center top / cover;
+  padding-top: 66.84%;
+}
+
+.hero-content {
+  padding: 25px;
+  margin: 0;
+  width: 100%;
+  bottom: 10%;
+  border: 5px;
+  background-color: #e3a245;
+
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0.5;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .hero-content {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    border: 5px;
+    background-color: #e3a245;
+  }
+
+
+
+}
